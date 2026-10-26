@@ -1,0 +1,82 @@
+# ==============================================================================
+# Git Ignore Configuration for ASTB Internship Project
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Internal Drafts, AI Brainstorms & Scratchpads (Do NOT share with committee)
+# ------------------------------------------------------------------------------
+# These files contain raw AI assistant discussions, brainstorming notes,
+# internal evaluation planning, and sandbox execution remarks:
+idea.md
+finalize.md
+REPORT.md
+
+# ------------------------------------------------------------------------------
+# 2. Experiment Outputs, Intermediate Seed Runs & Test Dumps
+# ------------------------------------------------------------------------------
+# Generated run logs, intermediate per-seed JSON metrics, and test sweeps:
+out/
+test_output/
+finalize_output/
+astb_scale_output/
+checkpoints/
+results.json
+master_results.json
+
+# ------------------------------------------------------------------------------
+# 3. Model Weights, Checkpoints & Large Binaries
+# ------------------------------------------------------------------------------
+# Trained LoRA adapters, model weights, and dual-use poisoned model checkpoints:
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.onnx
+adapter/
+final_model/
+
+# ------------------------------------------------------------------------------
+# 4. Python Runtime & Build Artifacts
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ------------------------------------------------------------------------------
+# 5. Virtual Environments & Dependencies
+# ------------------------------------------------------------------------------
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ------------------------------------------------------------------------------
+# 6. Credentials, Secrets & Telemetry
+# ------------------------------------------------------------------------------
+# Prevent accidental leaks of Hugging Face tokens, API keys, or W&B telemetry:
+.env
+.env.*
+*.key
+*.pem
+*.token
+wandb/
+
+# IDE, Operating System & Misspelling
+.gitegnore
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.log
